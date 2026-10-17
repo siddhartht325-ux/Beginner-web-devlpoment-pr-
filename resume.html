@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siddharth Tiwari | Resume</title>
+    <style>
+        :root {
+            --bg: #f4f7fb;
+            --card: #ffffff;
+            --primary: #183153;
+            --accent: #1f7ae0;
+            --text: #1f2937;
+            --muted: #556070;
+            --border: #dfe7f1;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 32px auto;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(24, 49, 83, 0.08);
+            padding: 40px 48px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 18px;
+            margin-bottom: 24px;
+            gap: 16px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            color: var(--primary);
+        }
+
+        .title {
+            margin-top: 4px;
+            color: var(--accent);
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            font-size: 0.78rem;
+        }
+
+        .contact {
+            text-align: right;
+            font-size: 0.96rem;
+            color: var(--muted);
+        }
+
+        .contact a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .section {
+            margin-bottom: 26px;
+        }
+
+        .section h2 {
+            margin: 0 0 12px;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--primary);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 6px;
+        }
+
+        .summary {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .two-col {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 28px;
+        }
+
+        .edu-item, .project-item {
+            margin-bottom: 18px;
+        }
+
+        .edu-item strong, .project-item strong {
+            color: var(--primary);
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .btn-row {
+            margin-top: 18px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 999px;
+            padding: 12px 18px;
+            font-weight: 700;
+        }
+
+        .btn.secondary {
+            background: transparent;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+        }
+
+        @media (max-width: 700px) {
+            .page {
+                margin: 16px;
+                padding: 24px 20px;
+            }
+
+            .header, .two-col {
+                display: block;
+            }
+
+            .contact {
+                text-align: left;
+                margin-top: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div>
+                <h1>Siddharth Tiwari</h1>
+                <div class="title">B.Tech CSE Student | Aspiring AI/ML Developer</div>
+            </div>
+            <div class="contact">
+                <div><a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></div>
+                <div><a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></div>
+                <div><a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></div>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2>Profile</h2>
+            <p class="summary">
+                Computer Science student with a strong interest in programming, web development, and Artificial Intelligence.
+                I enjoy building practical projects, learning new technologies, and improving my problem-solving skills
+                through real-world learning experiences.
+            </p>
+        </section>
+
+        <div class="two-col">
+            <div>
+                <section class="section">
+                    <h2>Education</h2>
+                    <div class="edu-item">
+                        <strong>B.Tech in Computer Science Engineering</strong><br>
+                        Shri Ramswaroop Memorial University<br>
+                        Specialization: AI & Machine Learning<br>
+                        Status: Currently pursuing
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>Projects</h2>
+                    <div class="project-item">
+                        <strong>Personal Portfolio</strong><br>
+                        Built a responsive portfolio website using HTML and CSS to present my skills, projects, and contact information.
+                    </div>
+                    <div class="project-item">
+                        <strong>AI Flashcard Generator</strong><br>
+                        A beginner AI-focused learning project exploring automated study aid generation and concept learning.
+                    </div>
+                </section>
+            </div>
+
+            <div>
+                <section class="section">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Python</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Basic AI / ML concepts</li>
+                        <li>Problem solving</li>
+                        <li>Teamwork and learning mindset</li>
+                    </ul>
+                </section>
+
+                <section class="section">
+                    <h2>Interests</h2>
+                    <ul>
+                        <li>Artificial Intelligence</li>
+                        <li>Machine Learning</li>
+                        <li>Web Development</li>
+                        <li>Technology learning and innovation</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <div class="btn-row">
+            <a class="btn" href="resume.pdf" target="_blank">Open PDF Resume</a>
+            <a class="btn secondary" href="index.html">Back to Portfolio</a>
+        </div>
+    </div>
+</body>
+</html>
