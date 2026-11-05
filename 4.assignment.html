@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Website</title>
+    <link rel="stylesheet" href="happy.css">
+</head>
+<body>
+
+    <h1>Heading 1</h1>
+    
+    <h2> ABEY JAKE DEKH UDAY BHAI JINDA HAI ?</h2>
+    <div class="box" id="box1"></div>
+    <h2> HNN MAI JINDA  HU REY MANJNU TU KYU MERI TENSION LETA MUJHE KUCH NHI HOGA ! </h2>
+    
+    
+    <div class="box" id="box2"></div>
+
+    <section class="game" aria-labelledby="game-title">
+        <h2 id="game-title">Click the Target</h2>
+        <p>Click the target as many times as you can in 20 seconds!</p>
+        <div class="game-stats" aria-live="polite">
+            <span>Score: <strong id="score">0</strong></span>
+            <span>Time: <strong id="time">20</strong>s</span>
+        </div>
+        <div class="game-area" id="game-area">
+            <button class="target" id="target" type="button" aria-label="Click the target" hidden>Click!</button>
+            <span class="game-message" id="game-message">Press Start to play</span>
+        </div>
+        <button class="start-button" id="start-button" type="button">Start Game</button>
+    </section>
+
+    <script>
+        const gameArea = document.getElementById("game-area");
+        const target = document.getElementById("target");
+        const startButton = document.getElementById("start-button");
+        const scoreDisplay = document.getElementById("score");
+        const timeDisplay = document.getElementById("time");
+        const gameMessage = document.getElementById("game-message");
+
+        let score = 0;
+        let timeLeft = 20;
+        let timerId;
+
+        function moveTarget() {
+            const maxLeft = gameArea.clientWidth - target.offsetWidth;
+            const maxTop = gameArea.clientHeight - target.offsetHeight;
+            target.style.left = `${Math.random() * maxLeft}px`;
+            target.style.top = `${Math.random() * maxTop}px`;
+        }
+
+        function endGame() {
+            clearInterval(timerId);
+            target.hidden = true;
+            gameMessage.textContent = `Time's up! You scored ${score}.`;
+            gameMessage.hidden = false;
+            startButton.disabled = false;
+            startButton.textContent = "Play Again";
+        }
+
+        startButton.addEventListener("click", () => {
+            score = 0;
+            timeLeft = 20;
+            scoreDisplay.textContent = score;
+            timeDisplay.textContent = timeLeft;
+            gameMessage.hidden = true;
+            target.hidden = false;
+            startButton.disabled = true;
+            moveTarget();
+
+            timerId = setInterval(() => {
+                timeLeft -= 1;
+                timeDisplay.textContent = timeLeft;
+
+                if (timeLeft === 0) {
+                    endGame();
+                }
+            }, 1000);
+        });
+
+        target.addEventListener("click", () => {
+            score += 1;
+            scoreDisplay.textContent = score;
+            moveTarget();
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,105 @@
+
+h1{
+    background-color:beige
+}
+h2{
+    background-color:azure;
+}
+.box{
+      height: 100px;
+      width: 100px;
+      padding-left: 10px;
+      padding-right: 5px;
+      padding-bottom: 5px;
+      box-sizing: border-box;
+}
+#box1{
+    background-color:green;
+    image-rendering:pixelated;
+    background-image: url( https://images.weserv.nl/?url=www.pinkvilla.com/images/2024-03/1710937112_welcome-9.jpg&w=100&h=100&fit=cover);
+    background-size: cover;
+    margin: 10px 5px 4px 20px;
+}
+
+#box2{
+    background-color:yellow;
+    image-rendering:pixelated;
+    background-image: url(https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA2dNWin.img?w=1012&h=569&m=6&x=116&y=106&s=379&d=379);
+    background-size: cover;
+}
+
+.game{
+    max-width: 420px;
+    margin: 32px 0;
+    padding: 16px;
+    background-color: #f3f8ff;
+    border: 1px solid #c9d9ee;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+}
+
+.game h2{
+    margin-top: 0;
+}
+
+.game-stats{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 12px;
+}
+
+.game-area{
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+    background-color: white;
+    border: 2px solid #8ca9c9;
+    border-radius: 8px;
+}
+
+.target{
+    position: absolute;
+    width: 64px;
+    height: 44px;
+    padding: 0;
+    color: white;
+    background-color: #e34848;
+    border: 0;
+    border-radius: 22px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.target:hover{
+    background-color: #c52f2f;
+}
+
+.game-message{
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    color: #334155;
+    font-weight: bold;
+}
+
+.game-message[hidden],
+.target[hidden]{
+    display: none;
+}
+
+.start-button{
+    margin-top: 12px;
+    padding: 10px 16px;
+    color: white;
+    background-color: #2563eb;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.start-button:disabled{
+    cursor: not-allowed;
+    opacity: 0.6;
+}
