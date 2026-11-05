@@ -5,16 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Myntra - Fashion Store</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="myntra.css">
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
     <header class="navbar">
-        <div class="logo">M<span>Y</span>NTRA</div>
+        <a class="logo" href="#" aria-label="Myntra home">MYNTRA</a>
 
-        <nav>
+        <nav aria-label="Main navigation">
             <a href="#men">MEN</a>
             <a href="#women">WOMEN</a>
             <a href="#kids">KIDS</a>
@@ -22,26 +21,28 @@
             <a href="#beauty">BEAUTY</a>
         </nav>
 
-        <input type="text" placeholder="Search for products, brands">
+        <label class="search">
+            <span aria-hidden="true">⌕</span>
+            <input type="search" placeholder="Search for products and brands" aria-label="Search">
+        </label>
 
         <div class="nav-icons">
-            <div>👤<small>Profile</small></div>
-            <div>♡<small>Wishlist</small></div>
-            <div>🛍<small>Bag</small></div>
+            <button aria-label="Profile">♙<small>Profile</small></button>
+            <button aria-label="Wishlist">♡<small>Wishlist</small></button>
+            <button aria-label="Shopping bag">▢<small>Bag</small></button>
         </div>
     </header>
 
-    <!-- Offer Strip -->
     <div class="offer">
-        FLAT 50% OFF — SPECIAL FASHION OFFERS!
+        End of Season Sale &nbsp;•&nbsp; Extra 10% off on your first order
     </div>
 
     <!-- Main Banner -->
     <section class="banner">
         <div class="banner-content">
             <p>THE BIG FASHION EVENT</p>
-            <h1>STYLE YOUR<br>OWN STORY</h1>
-            <h2>UP TO 60% OFF</h2>
+            <h1>Style your<br>own story.</h1>
+            <h2>Up to 60% off</h2>
             <a href="#products" class="shop-btn">SHOP NOW →</a>
         </div>
     </section>
@@ -52,25 +53,25 @@
 
         <div class="category-list">
             <a href="#products" class="category">
-                <img src="https://placehold.co/250x280/f6d8d8/333?text=MEN"
+                <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=600&q=85"
                      alt="Men's fashion">
                 <h3>MEN</h3>
             </a>
 
             <a href="#products" class="category" id="women">
-                <img src="https://placehold.co/250x280/f7dfeb/333?text=WOMEN"
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=85"
                      alt="Women's fashion">
                 <h3>WOMEN</h3>
             </a>
 
             <a href="#products" class="category" id="kids">
-                <img src="https://placehold.co/250x280/d8eaf7/333?text=KIDS"
+                <img src="https://images.unsplash.com/photo-1607453998774-d533f65dac99?auto=format&fit=crop&w=600&q=85"
                      alt="Kids' fashion">
                 <h3>KIDS</h3>
             </a>
 
             <a href="#products" class="category" id="beauty">
-                <img src="https://placehold.co/250x280/e8ddf7/333?text=BEAUTY"
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=600&q=85"
                      alt="Beauty products">
                 <h3>BEAUTY</h3>
             </a>
@@ -85,7 +86,7 @@
         <div class="product-list">
 
             <div class="product-card">
-                <img src="https://placehold.co/300x350/f1e8df/333?text=Casual+T-Shirt"
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=85"
                      alt="Casual T-shirt">
                 <div class="product-info">
                     <h3>Urban Style</h3>
@@ -97,7 +98,7 @@
             </div>
 
             <div class="product-card">
-                <img src="https://placehold.co/300x350/e2e6f0/333?text=Sneakers"
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=85"
                      alt="White sneakers">
                 <div class="product-info">
                     <h3>Street Walk</h3>
@@ -109,7 +110,7 @@
             </div>
 
             <div class="product-card">
-                <img src="https://placehold.co/300x350/e9d6ca/333?text=Denim+Jacket"
+                <img src="https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?auto=format&fit=crop&w=700&q=85"
                      alt="Denim jacket">
                 <div class="product-info">
                     <h3>Classic Denim</h3>
@@ -121,7 +122,7 @@
             </div>
 
             <div class="product-card">
-                <img src="https://placehold.co/300x350/f2dce8/333?text=Handbag"
+                <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=85"
                      alt="Fashion handbag">
                 <div class="product-info">
                     <h3>Fashion Hub</h3>
@@ -168,3 +169,4 @@
 
 </body>
 </html>
+
